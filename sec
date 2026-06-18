@@ -1,0 +1,6 @@
+def fun(*arg):
+    c=0
+    for i in arg():
+        c+=i
+    print(c)
+fun(2,6,3)

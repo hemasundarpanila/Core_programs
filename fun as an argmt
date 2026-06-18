@@ -1,0 +1,8 @@
+def fun1(fun,value):
+    return fun(value)
+def fun2(x):
+    return x*2
+def fun3(x):
+    return x*x
+print(fun1(fun2,5))
+print(fun1(fun3,5))

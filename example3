@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+'''def dun(x):
+    return x+6
+p=dun(10)
+print(p)'''
