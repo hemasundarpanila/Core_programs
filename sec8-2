@@ -1,2 +1,0 @@
-s=lambda x,y:x if x>y else y
-print(s(20,30))

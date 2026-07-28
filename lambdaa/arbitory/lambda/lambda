@@ -1,3 +1,0 @@
-x=lambda k:k**k
-a=x(2)
-print(a)

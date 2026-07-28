@@ -1,3 +1,0 @@
-def fun(a,b,*arg,position="defalt",**kws):
-    print(a,b,arg,position,kws)
-fun(1,2,3,4,5,position="changed",name="Alice",age=21)

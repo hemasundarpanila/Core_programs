@@ -1,0 +1,3 @@
+l=["mangala","shiva","ramu"]
+k=list(filter(lambda x:x[0].isupper(),l))
+print(k)

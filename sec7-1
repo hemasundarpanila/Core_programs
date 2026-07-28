@@ -1,5 +1,0 @@
-def fun(l):
-    count=len
-    return count(l)
-shiva=[1,2,3,4]
-print(fun(shiva))

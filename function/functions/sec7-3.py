@@ -1,0 +1,13 @@
+def fun():
+    methods={
+        "upper":str.upper,
+        "lower":str.lower,
+        "title":str.title
+    }
+    text=input("enter:")
+    choice=input("enter method:")
+    if choice in methods:
+        print(methods[choice](text))
+    else:
+        print("invalid")
+fun() 
