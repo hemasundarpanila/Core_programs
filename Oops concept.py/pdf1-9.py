@@ -17,7 +17,7 @@ class BankAccount:
         print("validity:",BankAccount.valid(self.balance))
         print("bank name:",BankAccount.bank)
         print("_"*12)
-        
+               
 a=BankAccount("shiva",10000)
 b=BankAccount("nani",20000)
 BankAccount.change("Andhra bank")
