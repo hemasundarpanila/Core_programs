@@ -1,11 +1,11 @@
 #employe salary bonus
-def fun(salary):
-    def inner(percentage):
-        total=salary+salary*percentage/100
-        return total
-    return inner
-a=fun(30000)
-print(a(10))
+# def fun(salary):
+#     def inner(percentage):
+#         total=salary+salary*percentage/100
+#         return total
+#     return inner
+# a=fun(30000)
+# print(a(10))
 
 
 
@@ -114,3 +114,17 @@ print(a(10))
 #     return inner
 # a=fun("shiva")
 # a()
+
+# from functools import reduce
+# numbers=[1,2,3,4,5]
+# s=sorted(numbers,key=lambda x:x,reverse=True)
+# print(s)
+def fun():
+    x=3
+    print("hello")
+    def fun2():
+        y=4
+        print(x+y,"hii")
+    return fun2
+s=fun()
+s()

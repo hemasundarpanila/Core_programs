@@ -239,3 +239,232 @@
 #         print(i)
 #         break
 
+#2.	Create an custom iterator that prints numbers from N to 1.
+
+# class A:
+#     def __init__(self,n):
+#         self.n=n
+#         self.index=1
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while self.index<self.n:
+#             value=self.index
+#             self.index+=1
+#             return value
+#         else:
+#             raise StopIteration
+# s=A(5)
+# for i in s:
+#     print(i)
+    # c=c+1
+    # if c==5:
+    #     break
+
+#3.	Create an custom iterator that prints the first N even numbers.
+#4.	Create an custom iterator that prints the first N odd numbers.
+
+
+# class even:
+#     def __init__(self,n):
+#         self.n=n
+#         self.num=1
+#         self.c=1
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while self.c<=self.n:
+#             value=self.num
+#             self.num+=1
+#             if value%2==1:
+#                 self.c+=1
+#                 return value
+#         else:
+#             raise StopIteration
+# d=even(10)
+# # print(next(d))
+# # print(next(d))
+# # print(next(d))
+# for i in d:
+#     print(i)
+
+# class odd:
+#     def __init__(self,n):
+#         self.n=n
+#         self.num=1
+#         self.c=1
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while(self.c<=self.n):
+#             value=self.num
+#             self.num+=1
+#             if value%2==1:
+#                 self.c+=1
+#                 return value
+#         else:
+#             raise StopIteration
+# s=odd(5)
+# for i in s:
+#     print(i)
+
+
+#5.	Create an custom iterator that returns only even numbers from a given list.
+
+# class even:
+#     def __init__(self,n):
+#         self.n=n
+#         self.index=0
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while self.index<len(self.n):
+#             value=self.n[self.index]
+#             self.index+=1
+#             if value%2==0:
+#                 return value
+#         else:
+#             raise StopIteration
+# s=even([2,3,4,5,6,7])
+# for i in s:
+#     # if i is None:
+#     #     break
+#     print(i)
+
+# class odd:
+#     def __init__(self,n):
+#         self.n=n
+#         self.index=0
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while(self.index<len(self.n)):
+#             value=self.n[self.index]
+#             self.index+=1
+#             if value%2==1:
+#                 return value
+#         else:
+#             raise StopIteration
+# d=odd([2,3,4,5,6,7,8])
+# for i in d:
+#     print(i)
+
+#8.	Create an custom iterator that prints each character of a string one by one.
+# class cha:
+#     def __init__(self,n):
+#         self.n=n
+#         k=len(n)-1
+#         self.index=k
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while(self.index<len(self.n)):
+#             value=self.n[self.index]
+#             self.index-=1
+#             return value
+#         else:
+#             raise StopIteration
+# s=cha("shiva")
+# print(next(s))
+# print(next(s))
+# print(next(s))
+# print(next(s))
+# print(next(s))
+# print(next(s))
+# # for i in s:
+# #     print(i)
+
+# class honey:
+#     def __init__(self,n):
+#         self.n=n
+#         self.index=0
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while(self.index<len(self.n)):
+#             value=self.n[self.index]
+#             self.index+=1
+#             if value in "aeiouAEIOU":
+#                 return value
+#         else:
+#             raise StopIteration
+# s=honey("shiva")
+# for i in s:
+#     print(i)
+
+# class cal:
+#     def __init__(self,n):
+#         self.n=n
+#         self.c=1
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while(self.c<=10):
+#             h=self.n*self.c
+#             self.c+=1
+#             return f"{self.n} * {self.c} = {h}"
+#         else:
+#             raise StopIteration
+# s=cal(6)
+# for i in s:
+#     print(i)
+
+# class prime:
+#     def __init__(self,a,b):
+#         self.a=a
+#         self.b=b
+#         self.index=0
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while self.a<self.b:
+#             i=self.a
+#             self.a+=1
+#             c=0
+#             for j in range(1,i+1):
+#                 if i%j==0:
+#                     c=c+1
+#             if c==2:
+#                 return i
+#         else:
+#             raise StopIteration
+# s1=prime(10,20)
+# for i in s1:
+#     print(i)
+
+# class num:
+#     def __init__(self,a,b):
+#         self.a=a
+#         self.b=b
+#         self.index=self.a
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while self.index<=self.b:
+#             value=self.index
+#             self.index+=1
+#             if value%2==0:
+#                 return value
+#         else:
+#             raise StopIteration
+# s1=num(10,20)
+# for i in s1:
+#     print(i)
+
+# class string:
+#     def __init__(self,a):
+#         self.a=a
+#         self.index=0
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while self.index<len(self.a):
+#             value=self.a[self.index]
+#             self.index+=1
+#             if value>0:
+#                 return value
+#         else:
+#             raise StopIteration
+# s1=string([1,-2,3,4,-5,6])
+# for i in s1:
+#     print(i)
