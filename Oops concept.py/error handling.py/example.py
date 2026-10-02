@@ -21,19 +21,20 @@
 # else:
 #     print("hii")
 
-# class InsufficientBalanceError(Exception):
-#     pass
-# balance = 5000
+# # class InsufficientBalanceError(Exception):
+# #     pass
+# # balance = 5000
 # try:
+#     balance=5000
 #     amount = int(input("Enter withdrawal amount: "))
 #     if amount <= 0:
 #         raise ValueError("Amount must be positive")
 #     if amount > balance:
-#         raise InsufficientBalanceError("Insufficient balance")
+#         raise ValueError("Insufficient balance")
 #     balance = balance - amount
 # except ValueError as e:
 #     print("Invalid amount:", e)
-# except InsufficientBalanceError as e:
+# except ValueError as e:
 #     print("Transaction failed:", e)
 # else:
 #     print("Withdrawal successful")
@@ -42,7 +43,13 @@
 #     print("Thank you")
 
 
-from abc import ABC,abstractmethod
-class payment(ABC):
-    def __init_(self,balance):
-        
+
+# def fun(n):
+#     for i in range(n):
+#         return i
+# a=fun(10)
+# print(a)
+
+d={}
+for i in range(len(d)):
+    print(d.values())
