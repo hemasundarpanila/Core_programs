@@ -172,6 +172,3 @@
 #     if n[i].isalnum():
 #         print(n[i])
 
-s="shiva"
-k=s.isalpha()
-print(k)

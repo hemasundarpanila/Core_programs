@@ -50,6 +50,26 @@
 # a=fun(10)
 # print(a)
 
-d={}
-for i in range(len(d)):
-    print(d.values())
+# l=[1,2,3,1]
+# s=set()
+# for i in l:
+#     if i not in s:
+#         s.add(i)
+#     else:
+#         print("true")
+# print("flase0")
+
+try:
+    a=int(input())
+    b=int(input())
+    raise ValueError()
+    c=a/b
+    print(c)
+except ValueError as e:
+    print("error occurd")
+except Exception as e:
+    print("something")
+else:
+    print("division is calculated")
+finally:
+    print("finished")

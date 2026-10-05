@@ -1,8 +1,8 @@
-# Q1. Create a class Animal with make_sound() and derived classes Dog, Cat, Cow that 
-# override it. 
-# Demonstrate polymorphism by iterating over a list of different animal objects and calling 
-# make_sound().
-
+'''Q1. Create a class Animal with make_sound() and derived classes Dog, Cat, Cow that 
+override it. 
+Demonstrate polymorphism by iterating over a list of different animal objects and calling 
+make_sound().
+'''
 # class animal:
 #     def make_sound(self):
 #         print("hiii")
@@ -19,10 +19,10 @@
 # for i in l:
 #     i.make_sound()
  
-# Write a function operate(device) that calls device.start(). 
-# Pass in objects of Car, Computer, and WashingMachine — all of which define a start() 
-# method, but share no inheritance relationship. 
-# Show that Python’s polymorphism works through behavior, not type. 
+'''Write a function operate(device) that calls device.start(). 
+Pass in objects of Car, Computer, and WashingMachine — all of which define a start() 
+method, but share no inheritance relationship. 
+Show that Python’s polymorphism works through behavior, not type. '''
 
 # class car:
 #     def start(self):
@@ -40,10 +40,10 @@
 # s1=operate(washing())
 
 
-# Create a Vector class that supports: 
-# • + operator → add coordinates 
-# • == operator → compare equality 
-# Show how operator overloading gives natural polymorphism to user-defined classes.
+'''Create a Vector class that supports: 
+• + operator → add coordinates 
+• == operator → compare equality 
+Show how operator overloading gives natural polymorphism to user-defined classes.'''
     
 
 # class vector:
@@ -155,18 +155,45 @@
 # print()
 # s2.move()
 
-class bs:
-    def logic(self,data):
-        print("bouble sort")
-        return sorted(data)
-class ms:
-    def logic(self,data):
-        print("merge")
-        return sorted(data)
-class sort:
-    def change(self,state,data):
-        return state.logic(data)
-num=[5,2,4,7,8]
-s=sort()
-print(s.change(bs(),num))
-print(s.change(ms(),num))
+# class bs:
+#     def logic(self,data):
+#         print("bouble sort")
+#         return sorted(data)
+# class ms:
+#     def logic(self,data):
+#         print("merge")
+#         return sorted(data)
+# class sort:
+#     def change(self,state,data):
+#         return state.logic(data)
+# num=[5,2,4,7,8]
+# s=sort()
+# print(s.change(bs(),num))
+# print(s.change(ms(),num))
+
+# class vector:
+#     def __init__(self,num1,num2):
+#         self.num1=num1
+#         self.num2=num2
+#     def __str__(self):
+#         return f"{self.num1,self.num2}"
+#     def __add__(self,ot):
+#         return vector(self.num1+ot.num1,self.num2+ot.num2)
+# s1=vector(0,2)
+# s2=vector(3,4)
+# s3=vector(5,10)
+# s4=vector(20,30)
+# print(s1+s2+s3+s4)
+        
+
+class account:
+    def withdraw(self,amount):
+        self.amount=amount
+        print("withdraw amount:",self.amount)
+class savingaccount(account):
+    def withdraw(self):
+        print("withdraw")
+class premiumsaving(savingaccount):
+    def withdraw(self):
+        return super().withdraw()
+
