@@ -32,8 +32,8 @@
 # print("some amount deposite:",s.deposite(2000))
 # print("some amount withdraw:",s.withdraw(5000))
 # s.check()
-# s.__balance=200000
-# print("direct value:",s.__balance)
+# # s.__balance=200000
+# # print("direct value:",s.__balance)
 # print("main value:",s.get())
 
 # 2. Design a Student class where marks: 
@@ -306,19 +306,19 @@
 
 
 
-class a:
-    def __init__(self):
-        self.__x=5
-    @property
-    def fi(self):
-        return self.__x
-    @fi.setter
-    def g(self,nx):
-        if nx<10 and nx>0:
-            self.__x=nx
-s=a()
-print(s.fi)
-s.g=7
-print(s.fi)
+# class a:
+#     def __init__(self):
+#         self.__x=5
+#     @property
+#     def fi(self):
+#         return self.__x
+#     @fi.setter
+#     def g(self,nx):
+#         if nx<10 and nx>0:
+#             self.__x=nx
+# s=a()
+# print(s.fi)
+# s.g=7
+# print(s.fi)
 
     

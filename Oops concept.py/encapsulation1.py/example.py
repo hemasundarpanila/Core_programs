@@ -122,3 +122,59 @@
 # print(b.get_balance())
 # b.new(15000)
 # print(b.get_balance())
+
+
+
+# class bank:
+#     def __init__(self):
+#         self._balance=10000
+# class savings(bank):
+#     def add_interest(self):
+#         self._balance=self._balance+500
+#         print(self._balance)
+# s=savings()
+# s.add_interest()
+# # print(s._balance)
+
+
+
+# class bank:
+#     def saving(self):
+#         self.__balance=1000
+# class extra(bank):
+#     def withdraw(self,amount):
+#         if amount<=self.__balance:
+#             self.__balance-=amount
+#             print(self.__balance)
+#         else:
+#             print("invalid amount")
+# s=extra()
+# s.withdraw(200)
+
+# class bank:
+#     def __init__(self):
+#         self.__balance=1000  #self._bank__balance=1000 (internally)
+#     def nani(self):
+#         print(self.__balance)
+# class saving(bank):
+#     def shiva(self):
+#         print(self.__balance)
+# '''s=saving()
+# s.shiva() #this is search self._saving__balance (internally)
+# #so get an error'''
+# s1=bank()
+# s1.nani()
+# print(s1._bank__balance)
+
+
+# class Employee:
+#     def __init__(self):
+#         self.__id = 101
+# class Manager(Employee):
+#     def __init__(self):
+#         super().__init__()
+#         self.__id = 500
+# s=Manager()
+# print(s._Manager__id)
+
+

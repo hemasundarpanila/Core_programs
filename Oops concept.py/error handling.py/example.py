@@ -59,17 +59,17 @@
 #         print("true")
 # print("flase0")
 
-try:
-    a=int(input())
-    b=int(input())
-    raise ValueError()
-    c=a/b
-    print(c)
-except ValueError as e:
-    print("error occurd")
-except Exception as e:
-    print("something")
-else:
-    print("division is calculated")
-finally:
-    print("finished")
+# try:
+#     a=int(input())
+#     b=int(input())
+#     raise ValueError()
+#     c=a/b
+#     print(c)
+# except ValueError as e:
+#     print("error occurd")
+# except Exception as e:
+#     print("something")
+# else:
+#     print("division is calculated")
+# finally:
+#     print("finished")
