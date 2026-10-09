@@ -150,11 +150,11 @@
 #     #     print("discount on product:",self.__discount)
 #     def get(self):
 #         k=(self.__discount/100)*self.__price
-#         g=self.__price=self.__price-k
-#         return g
+#         self.__price=self.__price-k
+#         return self.__price
 #     def get_final_price(self):
 #         print("final price:",self.__price)
-# s=product(500,35)
+# s=product(500,45)
 # s.get()
 # s.get_final_price()
 
@@ -285,24 +285,29 @@
 #         self.type=type
 #         self.__temp=32
 #     def cool(self):
+#         print("engine type:",self.type)
 #         print("engine cool")
-#         d=self.__temp=self.__temp-10
-#         print(d)
+#         self.__temp=self.__temp-10
+#         print(self.__temp)
 #     def start(self):
 #         print("started")
-#         k=self.__temp=self.__temp+10
-#         print(k)
+#         self.__temp=self.__temp+10
+#         print(self.__temp)
 # class car:
 #     def __init__(self,brand,engine):
 #         self.brand=brand
 #         self.engine=engine
 #     def start_car(self):
+#         print("engine brand:",self.brand)
 #         self.engine.start()
 #     def stop_car(self):
 #         self.engine.cool()
 # s=car("fual",engine("v12"))
 # s.start_car()
 # s.stop_car()
+
+
+
 
 
 
@@ -322,3 +327,27 @@
 # print(s.fi)
 
     
+
+# class shiva:
+#     def __init__(self,name):
+#         self.name=name
+#     def get(self):
+#         print(self.name)
+#         print("hii")
+# class nani:
+#     def __init__(self,age):
+#         self.age=age
+#     def check(self):
+#         self.age.get()
+# s=shiva("hemasundar")
+# s1=nani(s)
+# s1.check()
+
+
+def fun(n):
+    if n%2==0:
+        return (n)
+    else:
+        print("hii")
+s=fun(4)
+print(s)
