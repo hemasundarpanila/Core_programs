@@ -1,0 +1,12 @@
+8lines processed
+5lines cleaned
+3lines error
+1170lines processed
+food
+ -> 220
+travel
+ -> 200
+shopping
+ -> 300
+electronics
+ -> 450
